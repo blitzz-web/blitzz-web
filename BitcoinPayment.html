@@ -130,100 +130,48 @@
             </div>
         </div> -->
         <section class="signin-page account" style="width:100%" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="row">
-                                    <div class="col-md-6 mx-auto">
-                                        <div class="block">
-                                            <h2 class="text-center">Select your Crypto Coin to Buy</h2>
-                                            <form class="text-left clearfix mt-50" action="index.html">
-                                                <div class="form-group">
-                                                    <p style="color:black;">Coin Name</p>
-                                                    <!-- <input type="text" class="form-control"  placeholder="Coin"> -->
-                                                    <select id="abc" type="text" class="form-control"  placeholder="Coin">
-                                                        <option value="1">Bitcoin</option>
-                                                        <option value="2">Ethereum</option>
-                                                        <option value="3">BNB</option>
-                                                    </select>
-                                                    <!-- </input> -->
-                                                </div>
-                                                <div class="form-group">
-                                                    <p style="color:black;">USD Price</p>
-                                                    <input type="text" class="form-control" placeholder="USD">
-                                                </div>
-                                                <button type="submit" class="btn btn-main" >BUY</button>
-                                            </form>
-                                        </div>
-                                    </div>
+            <div class="container" style="background-color:white;">
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Demo!</h4>
+                    <p>Multi-Coin Crypto-Payment Gateway Payment Box Example (json, bootstrap4, mobile friendly, optional - free White Label Product - Bitcoin/altcoin Payments with your own logo and all payment requests through your server, </p>
+                  </div>
+                  <div class="card mt-5">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <center>
+                                <img width="300" height="350" data-toggle="tooltip" data-placement="bottom" title="QR Code - Bitcoin address and sum you can scan with a mobile phone camera. Open Bitcoin Wallet, click on camera icon, point the camera at the code, and you're done" class="qr-display" src="https://chart.googleapis.com/chart?chs=125x125&amp;cht=qr&amp;chl=bitcoin:36JZSXnxDuZFuvdRr138usTGVUyahTKB8x?amount=0.00051484&amp;choe=UTF-8">
+                            </center>
+
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Custom Payment #kd3FkGbYEE8Z</h5>
+                                <hr>
+                                <h2 class="mb-2"><span id="amount" style="color: black;">0.00051484</span> BTC <img class="copyImg copy-img" id="copyImg" src="assets/img/copy.svg" data-clipboard-target="#amount"  data-toggle="tooltip" data-placement="top" title="Copy"></h2>
+
+                                <p class="card-text mt-2" style="color: black;">Send 0.00051484</p>                                       
+                                <p>                                       
+                                    <span style="color: black;" id="coin">BTC</span> (in ONE payment) to: don't include transaction fee in this amount
+                                </p>
+                                <h4  class="card-title wallet-text-2"><a class="copyWallet" id="copyWallet" data-original-title="Copy Wallet" data-clipboard-target="#wallet" data-placement="bottom" data-toggle="tooltip"><spam id="wallet">36JZSXnxDuZFuvdRr138usTGVUyahTKB8x</spam></a> </h4>
+
+                                <p class="card-text mt-2"></p>
+
+                                <div id="paymentStat">
+                                    <span class="text btn btn-block btn-secondary btn-lg">
+                                     <i class="fa-spin fas fa-circle-notch"></i>
+                                        Buy/Sell
+                                     <span id="timer" data-seconds-left="43200"></span></span>
                                 </div>
+                                <br>
+
+                                </p>
+                                <p class="card-text" id="tips"><small class="text-muted">If you send any other BTC amount, payment system will ignore it!</small></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="tab-content" id="pills-tabContent">
-                            <div id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                <div class="row">
-                                    <div class="col-md-6 mx-auto">
-                                        <div class="block">
-                                            <h2 class="text-center">Select your Crypto Coin to Sell</h2>
-                                            <form class="text-left clearfix mt-50" action="index.html">
-                                                <div class="form-group">
-                                                    <p style="color:black;">Coin Name</p>
-                                                    <!-- <input type="text" class="form-control"  placeholder="Coin"> -->
-                                                    <select id="abc" type="text" class="form-control"  placeholder="Coin">
-                                                        <option value="1">Bitcoin</option>
-                                                        <option value="2">Ethereum</option>
-                                                        <option value="3">BNB</option>
-                                                    </select>
-                                                    <!-- </input> -->
-                                                </div>
-                                                <div class="form-group">
-                                                    <p style="color:black;">USD Price</p>
-                                                    <input type="text" class="form-control" placeholder="USD">
-                                                </div>
-                                                <button type="submit" class="btn btn-main" >SELL</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row">
-                    <div class="col-md-6 mx-auto">
-                        <div class="block">
-                            <h2 class="text-center">Select your Crypto Coin</h2>
-                            <form class="text-left clearfix mt-50" action="index.html" >
-                                <div class="form-group">
-                                    <p style="color:black;">Coin Name</p>
-                                     <input type="text" class="form-control"  placeholder="Coin"> -->
-                                    <!-- <select id="abc" type="text" class="form-control"  placeholder="Coin">
-                                        <option value="1">Bitcoin</option>
-                                        <option value="2">Ethereum</option>
-                                        <option value="3">BNB</option>
-                                        </select>
-                                    </input> 
-                                </div>
-                                <div class="form-group">
-                                    <p style="color:black;">USD Price</p>
-                                    <input type="text" class="form-control" placeholder="USD">
-                                </div>
-                                <button type="submit" class="btn btn-main" >BUY</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>  -->
     </section>
         <!-- <div class="row">
             <div class="col-md-12">
